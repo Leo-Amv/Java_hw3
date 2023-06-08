@@ -10,8 +10,10 @@ public class Main {
                 new FixedWorker("Maks",2800),
                 new FixedWorker("Vlad",2900)
         };
-        for (BaseWorker worker: workers) {
-            System.out.println(worker.avgMonthlySalary());
-        }
+//        for (BaseWorker worker: workers) {
+//            System.out.println(worker.avgMonthlySalary());
+//        }
+        WorkersArray workersArray = new WorkersArray(workers);
+        workersArray.printWorkers();
     }
 }
